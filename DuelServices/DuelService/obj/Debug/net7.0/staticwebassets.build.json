@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "aRdKPrXzcXkwBx8WOe/YbaVZwDYsIi96FdTp+Ci+EYc=",
+  "Source": "DualService",
+  "BasePath": "_content/DualService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
