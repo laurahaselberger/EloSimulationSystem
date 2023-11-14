@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "UuN+f9OGxPPuhVL1J0Gt9lrFq65+yP4ZVWHP8KwyHFR6BGuhvye1uAvbD3Bpdt18kH3jdIz0pWETd+fovhLuaw==",
+  "success": true,
+  "projectFilePath": "D:\\Projekte\\Repository\\EloSimulationSystem\\DuelServices\\Domain\\Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.16\\microsoft.netcore.app.ref.6.0.16.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.16\\microsoft.windowsdesktop.app.ref.6.0.16.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.16\\microsoft.aspnetcore.app.ref.6.0.16.nupkg.sha512"
+  ],
+  "logs": []
+}
