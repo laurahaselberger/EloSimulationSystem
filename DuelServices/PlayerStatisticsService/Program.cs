@@ -1,15 +1,21 @@
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
-using PlayerStatisticsService.Data;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using HttpClientService;
 
 var builder = WebApplication.CreateBuilder(args);
+
+// Füge den HttpClientService hinzu
+builder.Services.AddHttpClient();
 
 builder.Services.AddControllers();
 
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
-builder.Services.AddSingleton<WeatherForecastService>();
+// builder.Services.AddSingleton<WeatherForecastService>();
 
 var app = builder.Build();
 

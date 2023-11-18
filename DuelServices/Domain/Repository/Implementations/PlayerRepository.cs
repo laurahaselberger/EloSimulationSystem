@@ -1,4 +1,4 @@
-﻿
+﻿using Model.Entities;
 
 namespace Domain.Repository.Implementations;
 

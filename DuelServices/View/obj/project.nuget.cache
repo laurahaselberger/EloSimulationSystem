@@ -1,12 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Jh/UsFzadZI9UiT75sXjJMJOTmNg8+QdCITsOPFJjeWEGQh3O3q7SmlVP+gJrpn+1xu7i5G31WiUr0EaeKvs5Q==",
+  "dgSpecHash": "r6QxqkOyhDJ3oXvVUc4icEYrP/9bRcYL61PCLa/Blu2Sq4ge5d/ag1/wEI/RkDEqHIq5XzZ1yq+URP48fTxvQw==",
   "success": true,
-  "projectFilePath": "D:\\Projekte\\Repository\\EloSimulationSystem\\DuelServices\\View\\View.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.16\\microsoft.netcore.app.ref.6.0.16.nupkg.sha512",
-    "C:\\Users\\user\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.16\\microsoft.windowsdesktop.app.ref.6.0.16.nupkg.sha512",
-    "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.16\\microsoft.aspnetcore.app.ref.6.0.16.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\lh022\\repos\\EloSimulationSystem\\DuelServices\\View\\View.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }
