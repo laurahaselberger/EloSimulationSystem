@@ -1,12 +1,12 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using RegistrationService.Entities;
 
 namespace PlayerStatisticsService.Entities; 
 
 public class PlayerStatistic
 {
-    [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-    [Column("PlayerId")]
+    [Key, ForeignKey(nameof(Player))]
     public int PlayerId { get; set; }
 
     [Required]
@@ -30,4 +30,7 @@ public class PlayerStatistic
 
     [Column("LastDuelPlayedAt")]
     public DateTime? LastDuelPlayedAt { get; set; }
+
+    [Required]
+    public Player Player { get; set; }
 }

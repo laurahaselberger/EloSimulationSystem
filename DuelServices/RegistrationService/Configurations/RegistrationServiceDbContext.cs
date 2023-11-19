@@ -6,7 +6,7 @@ namespace RegistrationService.Configurations;
 public class RegistrationServiceDbContext : DbContext
 {
     public DbSet<Player> Players { get; set; }
-    
+        
     public RegistrationServiceDbContext(DbContextOptions<RegistrationServiceDbContext> options) : base(options)
     {
     }

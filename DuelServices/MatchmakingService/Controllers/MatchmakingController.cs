@@ -1,77 +1,95 @@
-﻿using System.Text.Json;
+﻿using System;
+using System.Collections.Generic;
+using System.Net.Http;
+using System.Text.Json;
+using System.Threading.Tasks;
+using MatchmakingService.Dtos;
 using MatchmakingService.Repositories.Implementations;
 using Microsoft.AspNetCore.Mvc;
 using RegistrationService.Entities;
 
-namespace MatchmakingService.Controellers;
-
-[Route("api/[controller]")]
-[ApiController]
-public class MatchmakingController : ControllerBase
+namespace MatchmakingService.Controllers
 {
-    
+    [Route("[controller]")]
+    [ApiController]
+    public class MatchmakingController : ControllerBase
+    {
         private readonly MatchmakingRepository _matchmakingRepository;
-        private readonly HttpClient _registrationServiceClient;
-        private readonly HttpClient _statisticsServiceClient;
+        private readonly HttpClientService.HttpClientService _httpClientService;
 
-        public MatchmakingController(MatchmakingRepository matchmakingRepository, IHttpClientFactory httpClientFactory)
+        public MatchmakingController(MatchmakingRepository matchmakingRepository, HttpClientService.HttpClientService httpClientService)
         {
-            _matchmakingRepository = matchmakingRepository;
-
-            // URL zu RegistrationService
-            var registrationServiceUrl = "https://url-zu-registrations-service";
-            _registrationServiceClient = httpClientFactory.CreateClient();
-            _registrationServiceClient.BaseAddress = new Uri(registrationServiceUrl);
-
-            // URL zu StatisticsService
-            var statisticsServiceUrl = "https://url-zu-statistics-service";
-            _statisticsServiceClient = httpClientFactory.CreateClient();
-            _statisticsServiceClient.BaseAddress = new Uri(statisticsServiceUrl);
+            _matchmakingRepository = matchmakingRepository ?? throw new ArgumentNullException(nameof(matchmakingRepository));
+            _httpClientService = httpClientService ?? throw new ArgumentNullException(nameof(httpClientService));
         }
 
-        [HttpGet]
-        public async Task<ActionResult<List<Player>>> GetMatchmaking()
+        [HttpGet("Matchmaking")]
+        public async Task<ActionResult<List<MatchmakingPlayerDto>>> GetMatchmaking()
         {
             try
             {
+                // Retrieve all players from the matchmaking repository
                 var allPlayers = await _matchmakingRepository.ReadAllAsync();
 
-                // Beispiel für den Zugriff auf RegistrationService
-                var registrationServicePlayersResponse = await _registrationServiceClient.GetAsync("/api/players");
+                // Initialize a list to store matchmaking player information
+                var matchmakingPlayers = new List<MatchmakingPlayerDto>();
 
-                if (!registrationServicePlayersResponse.IsSuccessStatusCode)
+                foreach (var player in allPlayers)
                 {
-                    // Logge den Fehler oder behandle ihn entsprechend
-                    return StatusCode((int)registrationServicePlayersResponse.StatusCode, "Fehler beim Zugriff auf RegistrationService");
+                    // Example: Access RegistrationService to get additional player information
+                    var registrationServicePlayerResponse = await _httpClientService.Client.GetAsync($"/api/players/{player.Id}");
+
+                    if (!registrationServicePlayerResponse.IsSuccessStatusCode)
+                    {
+                        return StatusCode((int)registrationServicePlayerResponse.StatusCode, "Error accessing RegistrationService");
+                    }
+
+                    var registrationServicePlayerJson = await registrationServicePlayerResponse.Content.ReadAsStringAsync();
+                    var registrationServicePlayer = JsonSerializer.Deserialize<Player>(registrationServicePlayerJson);
+
+                    // Example: Access StatisticsService to get last duel information
+                    var statisticsServiceLastGameTimeResponse = await _httpClientService.Client.GetAsync($"/api/statistics/{player.Id}/lastgametime");
+
+                    if (!statisticsServiceLastGameTimeResponse.IsSuccessStatusCode)
+                    {
+                        return StatusCode((int)statisticsServiceLastGameTimeResponse.StatusCode, "Error accessing StatisticsService");
+                    }
+
+                    var lastGameTimeJson = await statisticsServiceLastGameTimeResponse.Content.ReadAsStringAsync();
+                    var lastGameTime = JsonSerializer.Deserialize<DateTime>(lastGameTimeJson);
+
+                    // Create a MatchmakingPlayerDto with the retrieved information
+                    var matchmakingPlayerDto = new MatchmakingPlayerDto
+                    {
+                        PlayerId = player.Id,
+                        PlayerName = registrationServicePlayer.Name,
+                        EloRating = player.EloRating,
+                        LastDuelPlayedAt = lastGameTime
+                    };
+                    matchmakingPlayers.Add(matchmakingPlayerDto);
                 }
 
-                var registrationServicePlayersJson = await registrationServicePlayersResponse.Content.ReadAsStringAsync();
-                var registrationServicePlayers = JsonSerializer.Deserialize<List<Player>>(registrationServicePlayersJson);
-
-                // Beispiel für den Zugriff auf StatisticsService
-                var playerId = 1; // Setze die tatsächliche Spieler-ID
-                var lastGameTimeResponse = await _statisticsServiceClient.GetAsync($"/api/statistics/{playerId}/lastgametime");
-
-                if (!lastGameTimeResponse.IsSuccessStatusCode)
+                // Order the players
+                matchmakingPlayers.Sort((p1, p2) =>
                 {
-                    // Logge den Fehler oder behandle ihn entsprechend
-                    return StatusCode((int)lastGameTimeResponse.StatusCode, "Fehler beim Zugriff auf StatisticsService");
-                }
+                    // First, order by EloRating in descending order
+                    var eloRatingComparison = p2.EloRating.CompareTo(p1.EloRating);
 
-                var lastGameTimeJson = await lastGameTimeResponse.Content.ReadAsStringAsync();
-                var lastGameTime = JsonSerializer.Deserialize<DateTime>(lastGameTimeJson);
+                    if (eloRatingComparison != 0)
+                    {
+                        return eloRatingComparison;
+                    }
 
-                // Logik für die Ermittlung der bevorstehenden Duelle basierend auf den erhaltenen Daten
-                var upcomingDuels = allPlayers
-                    .OrderBy(player => player.EloRating)
-                    .ThenByDescending(player => lastGameTime); // Beispiellogik, bitte entsprechend anpassen
+                    // If EloRatings are the same, order by LastDuelPlayedAt in ascending order
+                    return p1.LastDuelPlayedAt.CompareTo(p2.LastDuelPlayedAt);
+                });
 
-                return upcomingDuels.ToList();
+                return Ok(matchmakingPlayers);
             }
             catch (Exception ex)
             {
-                // Logge den Fehler oder behandle ihn entsprechend
-                return StatusCode(500, "Interner Serverfehler");
+                return StatusCode(500, "Internal Server Error");
             }
         }
+    }
 }

@@ -1,26 +1,35 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projekte\\Repository\\EloSimulationSystem\\DuelServices\\PlayerStatisticsService\\PlayerStatisticsService.csproj": {}
+    "C:\\Users\\lh022\\repos\\EloSimulationSystem\\DuelServices\\PlayerStatisticsService\\PlayerStatisticsService.csproj": {}
   },
   "projects": {
-    "D:\\Projekte\\Repository\\EloSimulationSystem\\DuelServices\\HttpClientService\\HttpClientService.csproj": {
+    "C:\\Users\\lh022\\repos\\EloSimulationSystem\\DuelServices\\HttpClientService\\HttpClientService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projekte\\Repository\\EloSimulationSystem\\DuelServices\\HttpClientService\\HttpClientService.csproj",
+        "projectUniqueName": "C:\\Users\\lh022\\repos\\EloSimulationSystem\\DuelServices\\HttpClientService\\HttpClientService.csproj",
         "projectName": "HttpClientService",
-        "projectPath": "D:\\Projekte\\Repository\\EloSimulationSystem\\DuelServices\\HttpClientService\\HttpClientService.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "D:\\Projekte\\Repository\\EloSimulationSystem\\DuelServices\\HttpClientService\\obj\\",
+        "projectPath": "C:\\Users\\lh022\\repos\\EloSimulationSystem\\DuelServices\\HttpClientService\\HttpClientService.csproj",
+        "packagesPath": "C:\\Users\\lh022\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lh022\\repos\\EloSimulationSystem\\DuelServices\\HttpClientService\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\lh022\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.myget.org/F/umbraconightly/api/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
@@ -44,7 +53,7 @@
             },
             "Microsoft.Extensions.Http": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[7.0.0, )"
             },
             "System.Net.Http": {
               "target": "Package",
@@ -67,37 +76,46 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Projekte\\Repository\\EloSimulationSystem\\DuelServices\\PlayerStatisticsService\\PlayerStatisticsService.csproj": {
+    "C:\\Users\\lh022\\repos\\EloSimulationSystem\\DuelServices\\PlayerStatisticsService\\PlayerStatisticsService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projekte\\Repository\\EloSimulationSystem\\DuelServices\\PlayerStatisticsService\\PlayerStatisticsService.csproj",
+        "projectUniqueName": "C:\\Users\\lh022\\repos\\EloSimulationSystem\\DuelServices\\PlayerStatisticsService\\PlayerStatisticsService.csproj",
         "projectName": "PlayerStatisticsService",
-        "projectPath": "D:\\Projekte\\Repository\\EloSimulationSystem\\DuelServices\\PlayerStatisticsService\\PlayerStatisticsService.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "D:\\Projekte\\Repository\\EloSimulationSystem\\DuelServices\\PlayerStatisticsService\\obj\\",
+        "projectPath": "C:\\Users\\lh022\\repos\\EloSimulationSystem\\DuelServices\\PlayerStatisticsService\\PlayerStatisticsService.csproj",
+        "packagesPath": "C:\\Users\\lh022\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lh022\\repos\\EloSimulationSystem\\DuelServices\\PlayerStatisticsService\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\lh022\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.myget.org/F/umbraconightly/api/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\Projekte\\Repository\\EloSimulationSystem\\DuelServices\\HttpClientService\\HttpClientService.csproj": {
-                "projectPath": "D:\\Projekte\\Repository\\EloSimulationSystem\\DuelServices\\HttpClientService\\HttpClientService.csproj"
+              "C:\\Users\\lh022\\repos\\EloSimulationSystem\\DuelServices\\HttpClientService\\HttpClientService.csproj": {
+                "projectPath": "C:\\Users\\lh022\\repos\\EloSimulationSystem\\DuelServices\\HttpClientService\\HttpClientService.csproj"
               },
-              "D:\\Projekte\\Repository\\EloSimulationSystem\\DuelServices\\RegistrationService\\RegistrationService.csproj": {
-                "projectPath": "D:\\Projekte\\Repository\\EloSimulationSystem\\DuelServices\\RegistrationService\\RegistrationService.csproj"
+              "C:\\Users\\lh022\\repos\\EloSimulationSystem\\DuelServices\\RegistrationService\\RegistrationService.csproj": {
+                "projectPath": "C:\\Users\\lh022\\repos\\EloSimulationSystem\\DuelServices\\RegistrationService\\RegistrationService.csproj"
               }
             }
           }
@@ -121,6 +139,10 @@
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Http": {
               "target": "Package",
               "version": "[7.0.0, )"
             },
@@ -148,32 +170,45 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Projekte\\Repository\\EloSimulationSystem\\DuelServices\\RegistrationService\\RegistrationService.csproj": {
+    "C:\\Users\\lh022\\repos\\EloSimulationSystem\\DuelServices\\RegistrationService\\RegistrationService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projekte\\Repository\\EloSimulationSystem\\DuelServices\\RegistrationService\\RegistrationService.csproj",
+        "projectUniqueName": "C:\\Users\\lh022\\repos\\EloSimulationSystem\\DuelServices\\RegistrationService\\RegistrationService.csproj",
         "projectName": "RegistrationService",
-        "projectPath": "D:\\Projekte\\Repository\\EloSimulationSystem\\DuelServices\\RegistrationService\\RegistrationService.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "D:\\Projekte\\Repository\\EloSimulationSystem\\DuelServices\\RegistrationService\\obj\\",
+        "projectPath": "C:\\Users\\lh022\\repos\\EloSimulationSystem\\DuelServices\\RegistrationService\\RegistrationService.csproj",
+        "packagesPath": "C:\\Users\\lh022\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lh022\\repos\\EloSimulationSystem\\DuelServices\\RegistrationService\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\lh022\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.myget.org/F/umbraconightly/api/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\lh022\\repos\\EloSimulationSystem\\DuelServices\\HttpClientService\\HttpClientService.csproj": {
+                "projectPath": "C:\\Users\\lh022\\repos\\EloSimulationSystem\\DuelServices\\HttpClientService\\HttpClientService.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -212,7 +247,7 @@
             },
             "Microsoft.Extensions.Http": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[7.0.0, )"
             },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
@@ -242,7 +277,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

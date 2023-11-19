@@ -17,31 +17,33 @@
           <PrivateAssets>all</PrivateAssets>
           <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
+        <PackageReference Include="Microsoft.Extensions.Http" Version="7.0.0" />
         <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="7.0.0" />
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
     </ItemGroup>
 
     <ItemGroup>
       <Compile Remove="Entities\**" />
-      <Compile Remove="Dtos\**" />
+      <Compile Include="Dtos\DuelOutcomeDto.cs" />
+      <Compile Include="Dtos\MatchmakingPlayer.cs" />
+      <Compile Include="Dtos\MatchmakingPlayerDto.cs" />
+      <Compile Include="Dtos\UpcomingDuelDto.cs" />
     </ItemGroup>
 
     <ItemGroup>
       <EmbeddedResource Remove="Entities\**" />
-      <EmbeddedResource Remove="Dtos\**" />
     </ItemGroup>
 
     <ItemGroup>
       <None Remove="Entities\**" />
-      <None Remove="Dtos\**" />
     </ItemGroup>
 
     <ItemGroup>
       <Content Remove="Entities\**" />
-      <Content Remove="Dtos\**" />
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\HttpClientService\HttpClientService.csproj" />
       <ProjectReference Include="..\RegistrationService\RegistrationService.csproj" />
     </ItemGroup>
 

@@ -1,26 +1,38 @@
 {
   "Version": 1,
-  "Hash": "/bfQarOEtAhyRmvSlzOjB9GvJRtRynEvN6oJnM04zEI=",
+  "Hash": "EGAyPJwAONS13+Sxt6UarfzBj5dEEVteZ86PjcFTafM=",
   "Source": "PlayerStatisticsService",
   "BasePath": "_content/PlayerStatisticsService",
   "Mode": "Default",
   "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\Users\\lh022\\repos\\EloSimulationSystem\\DuelServices\\RegistrationService\\RegistrationService.csproj",
+      "Version": 2,
+      "Source": "RegistrationService",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
+    }
+  ],
   "DiscoveryPatterns": [
     {
       "Name": "PlayerStatisticsService\\wwwroot",
       "Source": "PlayerStatisticsService",
-      "ContentRoot": "C:\\Users\\lh022\\,HTL\\4BHITM\\SEW\\RiderProjects\\5BHITM\\DualServices\\PlayerStatisticsService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\lh022\\repos\\EloSimulationSystem\\DuelServices\\PlayerStatisticsService\\wwwroot\\",
       "BasePath": "_content/PlayerStatisticsService",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\lh022\\,HTL\\4BHITM\\SEW\\RiderProjects\\5BHITM\\DualServices\\PlayerStatisticsService\\obj\\Debug\\net7.0\\scopedcss\\bundle\\PlayerStatisticsService.styles.css",
+      "Identity": "C:\\Users\\lh022\\repos\\EloSimulationSystem\\DuelServices\\PlayerStatisticsService\\obj\\Debug\\net7.0\\scopedcss\\bundle\\PlayerStatisticsService.styles.css",
       "SourceId": "PlayerStatisticsService",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\lh022\\,HTL\\4BHITM\\SEW\\RiderProjects\\5BHITM\\DualServices\\PlayerStatisticsService\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\lh022\\repos\\EloSimulationSystem\\DuelServices\\PlayerStatisticsService\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
       "BasePath": "_content/PlayerStatisticsService",
       "RelativePath": "PlayerStatisticsService.styles.css",
       "AssetKind": "All",
@@ -31,13 +43,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\lh022\\,HTL\\4BHITM\\SEW\\RiderProjects\\5BHITM\\DualServices\\PlayerStatisticsService\\obj\\Debug\\net7.0\\scopedcss\\bundle\\PlayerStatisticsService.styles.css"
+      "OriginalItemSpec": "C:\\Users\\lh022\\repos\\EloSimulationSystem\\DuelServices\\PlayerStatisticsService\\obj\\Debug\\net7.0\\scopedcss\\bundle\\PlayerStatisticsService.styles.css"
     },
     {
-      "Identity": "C:\\Users\\lh022\\,HTL\\4BHITM\\SEW\\RiderProjects\\5BHITM\\DualServices\\PlayerStatisticsService\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\PlayerStatisticsService.bundle.scp.css",
+      "Identity": "C:\\Users\\lh022\\repos\\EloSimulationSystem\\DuelServices\\PlayerStatisticsService\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\PlayerStatisticsService.bundle.scp.css",
       "SourceId": "PlayerStatisticsService",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\lh022\\,HTL\\4BHITM\\SEW\\RiderProjects\\5BHITM\\DualServices\\PlayerStatisticsService\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\lh022\\repos\\EloSimulationSystem\\DuelServices\\PlayerStatisticsService\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/PlayerStatisticsService",
       "RelativePath": "PlayerStatisticsService.bundle.scp.css",
       "AssetKind": "All",
@@ -48,13 +60,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\lh022\\,HTL\\4BHITM\\SEW\\RiderProjects\\5BHITM\\DualServices\\PlayerStatisticsService\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\PlayerStatisticsService.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\lh022\\repos\\EloSimulationSystem\\DuelServices\\PlayerStatisticsService\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\PlayerStatisticsService.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\lh022\\,HTL\\4BHITM\\SEW\\RiderProjects\\5BHITM\\DualServices\\PlayerStatisticsService\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Identity": "C:\\Users\\lh022\\repos\\EloSimulationSystem\\DuelServices\\PlayerStatisticsService\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "SourceId": "PlayerStatisticsService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\lh022\\,HTL\\4BHITM\\SEW\\RiderProjects\\5BHITM\\DualServices\\PlayerStatisticsService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\lh022\\repos\\EloSimulationSystem\\DuelServices\\PlayerStatisticsService\\wwwroot\\",
       "BasePath": "_content/PlayerStatisticsService",
       "RelativePath": "css/bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -68,10 +80,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\lh022\\,HTL\\4BHITM\\SEW\\RiderProjects\\5BHITM\\DualServices\\PlayerStatisticsService\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\lh022\\repos\\EloSimulationSystem\\DuelServices\\PlayerStatisticsService\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "PlayerStatisticsService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\lh022\\,HTL\\4BHITM\\SEW\\RiderProjects\\5BHITM\\DualServices\\PlayerStatisticsService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\lh022\\repos\\EloSimulationSystem\\DuelServices\\PlayerStatisticsService\\wwwroot\\",
       "BasePath": "_content/PlayerStatisticsService",
       "RelativePath": "css/bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -85,10 +97,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\lh022\\,HTL\\4BHITM\\SEW\\RiderProjects\\5BHITM\\DualServices\\PlayerStatisticsService\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "Identity": "C:\\Users\\lh022\\repos\\EloSimulationSystem\\DuelServices\\PlayerStatisticsService\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
       "SourceId": "PlayerStatisticsService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\lh022\\,HTL\\4BHITM\\SEW\\RiderProjects\\5BHITM\\DualServices\\PlayerStatisticsService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\lh022\\repos\\EloSimulationSystem\\DuelServices\\PlayerStatisticsService\\wwwroot\\",
       "BasePath": "_content/PlayerStatisticsService",
       "RelativePath": "css/open-iconic/FONT-LICENSE",
       "AssetKind": "All",
@@ -102,10 +114,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
     },
     {
-      "Identity": "C:\\Users\\lh022\\,HTL\\4BHITM\\SEW\\RiderProjects\\5BHITM\\DualServices\\PlayerStatisticsService\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "Identity": "C:\\Users\\lh022\\repos\\EloSimulationSystem\\DuelServices\\PlayerStatisticsService\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
       "SourceId": "PlayerStatisticsService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\lh022\\,HTL\\4BHITM\\SEW\\RiderProjects\\5BHITM\\DualServices\\PlayerStatisticsService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\lh022\\repos\\EloSimulationSystem\\DuelServices\\PlayerStatisticsService\\wwwroot\\",
       "BasePath": "_content/PlayerStatisticsService",
       "RelativePath": "css/open-iconic/font/css/open-iconic-bootstrap.min.css",
       "AssetKind": "All",
@@ -119,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\lh022\\,HTL\\4BHITM\\SEW\\RiderProjects\\5BHITM\\DualServices\\PlayerStatisticsService\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "Identity": "C:\\Users\\lh022\\repos\\EloSimulationSystem\\DuelServices\\PlayerStatisticsService\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
       "SourceId": "PlayerStatisticsService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\lh022\\,HTL\\4BHITM\\SEW\\RiderProjects\\5BHITM\\DualServices\\PlayerStatisticsService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\lh022\\repos\\EloSimulationSystem\\DuelServices\\PlayerStatisticsService\\wwwroot\\",
       "BasePath": "_content/PlayerStatisticsService",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.eot",
       "AssetKind": "All",
@@ -136,10 +148,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
     },
     {
-      "Identity": "C:\\Users\\lh022\\,HTL\\4BHITM\\SEW\\RiderProjects\\5BHITM\\DualServices\\PlayerStatisticsService\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "Identity": "C:\\Users\\lh022\\repos\\EloSimulationSystem\\DuelServices\\PlayerStatisticsService\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
       "SourceId": "PlayerStatisticsService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\lh022\\,HTL\\4BHITM\\SEW\\RiderProjects\\5BHITM\\DualServices\\PlayerStatisticsService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\lh022\\repos\\EloSimulationSystem\\DuelServices\\PlayerStatisticsService\\wwwroot\\",
       "BasePath": "_content/PlayerStatisticsService",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.otf",
       "AssetKind": "All",
@@ -153,10 +165,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
     },
     {
-      "Identity": "C:\\Users\\lh022\\,HTL\\4BHITM\\SEW\\RiderProjects\\5BHITM\\DualServices\\PlayerStatisticsService\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "Identity": "C:\\Users\\lh022\\repos\\EloSimulationSystem\\DuelServices\\PlayerStatisticsService\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
       "SourceId": "PlayerStatisticsService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\lh022\\,HTL\\4BHITM\\SEW\\RiderProjects\\5BHITM\\DualServices\\PlayerStatisticsService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\lh022\\repos\\EloSimulationSystem\\DuelServices\\PlayerStatisticsService\\wwwroot\\",
       "BasePath": "_content/PlayerStatisticsService",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.svg",
       "AssetKind": "All",
@@ -170,10 +182,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
     },
     {
-      "Identity": "C:\\Users\\lh022\\,HTL\\4BHITM\\SEW\\RiderProjects\\5BHITM\\DualServices\\PlayerStatisticsService\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "Identity": "C:\\Users\\lh022\\repos\\EloSimulationSystem\\DuelServices\\PlayerStatisticsService\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
       "SourceId": "PlayerStatisticsService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\lh022\\,HTL\\4BHITM\\SEW\\RiderProjects\\5BHITM\\DualServices\\PlayerStatisticsService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\lh022\\repos\\EloSimulationSystem\\DuelServices\\PlayerStatisticsService\\wwwroot\\",
       "BasePath": "_content/PlayerStatisticsService",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.ttf",
       "AssetKind": "All",
@@ -187,10 +199,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
     },
     {
-      "Identity": "C:\\Users\\lh022\\,HTL\\4BHITM\\SEW\\RiderProjects\\5BHITM\\DualServices\\PlayerStatisticsService\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "Identity": "C:\\Users\\lh022\\repos\\EloSimulationSystem\\DuelServices\\PlayerStatisticsService\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
       "SourceId": "PlayerStatisticsService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\lh022\\,HTL\\4BHITM\\SEW\\RiderProjects\\5BHITM\\DualServices\\PlayerStatisticsService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\lh022\\repos\\EloSimulationSystem\\DuelServices\\PlayerStatisticsService\\wwwroot\\",
       "BasePath": "_content/PlayerStatisticsService",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.woff",
       "AssetKind": "All",
@@ -204,10 +216,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
     },
     {
-      "Identity": "C:\\Users\\lh022\\,HTL\\4BHITM\\SEW\\RiderProjects\\5BHITM\\DualServices\\PlayerStatisticsService\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "Identity": "C:\\Users\\lh022\\repos\\EloSimulationSystem\\DuelServices\\PlayerStatisticsService\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
       "SourceId": "PlayerStatisticsService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\lh022\\,HTL\\4BHITM\\SEW\\RiderProjects\\5BHITM\\DualServices\\PlayerStatisticsService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\lh022\\repos\\EloSimulationSystem\\DuelServices\\PlayerStatisticsService\\wwwroot\\",
       "BasePath": "_content/PlayerStatisticsService",
       "RelativePath": "css/open-iconic/ICON-LICENSE",
       "AssetKind": "All",
@@ -221,10 +233,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\ICON-LICENSE"
     },
     {
-      "Identity": "C:\\Users\\lh022\\,HTL\\4BHITM\\SEW\\RiderProjects\\5BHITM\\DualServices\\PlayerStatisticsService\\wwwroot\\css\\open-iconic\\README.md",
+      "Identity": "C:\\Users\\lh022\\repos\\EloSimulationSystem\\DuelServices\\PlayerStatisticsService\\wwwroot\\css\\open-iconic\\README.md",
       "SourceId": "PlayerStatisticsService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\lh022\\,HTL\\4BHITM\\SEW\\RiderProjects\\5BHITM\\DualServices\\PlayerStatisticsService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\lh022\\repos\\EloSimulationSystem\\DuelServices\\PlayerStatisticsService\\wwwroot\\",
       "BasePath": "_content/PlayerStatisticsService",
       "RelativePath": "css/open-iconic/README.md",
       "AssetKind": "All",
@@ -238,10 +250,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\README.md"
     },
     {
-      "Identity": "C:\\Users\\lh022\\,HTL\\4BHITM\\SEW\\RiderProjects\\5BHITM\\DualServices\\PlayerStatisticsService\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\lh022\\repos\\EloSimulationSystem\\DuelServices\\PlayerStatisticsService\\wwwroot\\css\\site.css",
       "SourceId": "PlayerStatisticsService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\lh022\\,HTL\\4BHITM\\SEW\\RiderProjects\\5BHITM\\DualServices\\PlayerStatisticsService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\lh022\\repos\\EloSimulationSystem\\DuelServices\\PlayerStatisticsService\\wwwroot\\",
       "BasePath": "_content/PlayerStatisticsService",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -255,10 +267,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\lh022\\,HTL\\4BHITM\\SEW\\RiderProjects\\5BHITM\\DualServices\\PlayerStatisticsService\\wwwroot\\favicon.png",
+      "Identity": "C:\\Users\\lh022\\repos\\EloSimulationSystem\\DuelServices\\PlayerStatisticsService\\wwwroot\\favicon.png",
       "SourceId": "PlayerStatisticsService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\lh022\\,HTL\\4BHITM\\SEW\\RiderProjects\\5BHITM\\DualServices\\PlayerStatisticsService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\lh022\\repos\\EloSimulationSystem\\DuelServices\\PlayerStatisticsService\\wwwroot\\",
       "BasePath": "_content/PlayerStatisticsService",
       "RelativePath": "favicon.png",
       "AssetKind": "All",

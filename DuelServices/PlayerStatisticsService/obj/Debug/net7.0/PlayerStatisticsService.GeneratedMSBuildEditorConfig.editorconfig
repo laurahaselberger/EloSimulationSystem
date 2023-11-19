@@ -9,41 +9,45 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = PlayerStatisticsService
 build_property.RootNamespace = PlayerStatisticsService
-build_property.ProjectDir = D:\Projekte\Repository\EloSimulationSystem\DuelServices\PlayerStatisticsService\
+build_property.ProjectDir = C:\Users\lh022\repos\EloSimulationSystem\DuelServices\PlayerStatisticsService\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\Projekte\Repository\EloSimulationSystem\DuelServices\PlayerStatisticsService
+build_property.MSBuildProjectDirectory = C:\Users\lh022\repos\EloSimulationSystem\DuelServices\PlayerStatisticsService
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Projekte/Repository/EloSimulationSystem/DuelServices/PlayerStatisticsService/App.razor]
+[C:/Users/lh022/repos/EloSimulationSystem/DuelServices/PlayerStatisticsService/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projekte/Repository/EloSimulationSystem/DuelServices/PlayerStatisticsService/Pages/Index.razor]
+[C:/Users/lh022/repos/EloSimulationSystem/DuelServices/PlayerStatisticsService/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projekte/Repository/EloSimulationSystem/DuelServices/PlayerStatisticsService/Shared/SurveyPrompt.razor]
+[C:/Users/lh022/repos/EloSimulationSystem/DuelServices/PlayerStatisticsService/Pages/PlayerStatistics.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGxheWVyU3RhdGlzdGljcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lh022/repos/EloSimulationSystem/DuelServices/PlayerStatisticsService/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projekte/Repository/EloSimulationSystem/DuelServices/PlayerStatisticsService/_Imports.razor]
+[C:/Users/lh022/repos/EloSimulationSystem/DuelServices/PlayerStatisticsService/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projekte/Repository/EloSimulationSystem/DuelServices/PlayerStatisticsService/Shared/MainLayout.razor]
+[C:/Users/lh022/repos/EloSimulationSystem/DuelServices/PlayerStatisticsService/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-t0aj83n5lv
 
-[D:/Projekte/Repository/EloSimulationSystem/DuelServices/PlayerStatisticsService/Shared/NavMenu.razor]
+[C:/Users/lh022/repos/EloSimulationSystem/DuelServices/PlayerStatisticsService/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-hggrtv4bh7
 
-[D:/Projekte/Repository/EloSimulationSystem/DuelServices/PlayerStatisticsService/Pages/Error.cshtml]
+[C:/Users/lh022/repos/EloSimulationSystem/DuelServices/PlayerStatisticsService/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projekte/Repository/EloSimulationSystem/DuelServices/PlayerStatisticsService/Pages/_Host.cshtml]
+[C:/Users/lh022/repos/EloSimulationSystem/DuelServices/PlayerStatisticsService/Pages/_Host.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

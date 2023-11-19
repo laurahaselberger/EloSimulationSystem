@@ -1,6 +1,6 @@
 ﻿using System.Linq.Expressions;
-using MatchmakingService.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
+using PlayerStatisticsService.Repositories.Interfaces;
 
 namespace MatchmakingService.Repositories.Implementations;
 

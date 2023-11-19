@@ -14,10 +14,10 @@ public class ManagePlayerRepository : ARepository<Player>
         var player = new Player()
         {
             Name = name,
-            EloRating = 1500.0m // Initialer Elo-Wert
+            EloRating = 1500.0m
         };
 
-        CreateAsync(player).Wait(); // Warten, um synchronen Aufruf zu ermöglichen
+        CreateAsync(player).Wait();
 
         return player;
     }
@@ -31,12 +31,12 @@ public class ManagePlayerRepository : ARepository<Player>
             player.Name = name;
             player.EloRating = eloRating;
 
-            UpdateAsync(player).Wait(); // Warten, um synchronen Aufruf zu ermöglichen
+            UpdateAsync(player).Wait();
 
             return player;
         }
 
-        return null; // Spieler nicht gefunden
+        return null;
     }
 
     public List<Player> GetAllPlayers()

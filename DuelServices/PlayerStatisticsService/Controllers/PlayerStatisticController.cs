@@ -1,68 +1,60 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using PlayerStatisticsService.Dtos;
+using PlayerStatisticsService.Entities;
 using PlayerStatisticsService.Repositories.Interfaces;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
-using PlayerStatisticsService;
-using PlayerStatisticsService.Dtos;
 
-namespace PlayerStatisticService.Controllers
+namespace PlayerStatisticsService.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     public class PlayerStatisticController : ControllerBase
     {
         private readonly IPlayerStatisticRepository _playerStatisticRepository;
 
         public PlayerStatisticController(IPlayerStatisticRepository playerStatisticRepository)
         {
-            _playerStatisticRepository = playerStatisticRepository;
+            _playerStatisticRepository = playerStatisticRepository ?? throw new ArgumentNullException(nameof(playerStatisticRepository));
         }
 
+        // Endpoint to retrieve statistics for all players
         [HttpGet("Statistics")]
-        public async Task<ActionResult<IEnumerable<PlayerStatisticsDto>>> GetPlayerStatistics()
+        public async Task<ActionResult<List<PlayerStatistic>>> GetStatistics()
         {
-            try
-            {
-                var playerStatistics = await _playerStatisticRepository.ReadAllAsync();
-                var playerStatisticsDtos = playerStatistics
-                    .Select(stat => new PlayerStatisticsDto
-                    {
-                        PlayerId = stat.PlayerId,
-                        PlayerName = stat.PlayerName,
-                        CurrentEloRating = stat.CurrentEloRating,
-                        NumberOfDuelsWon = stat.NumberOfDuelsWon,
-                        NumberOfDuelsLost = stat.NumberOfDuelsLost,
-                        NumberOfDuelsDraw = stat.NumberOfDuelsDraw,
-                        NumberOfDuelsPlayed = stat.NumberOfDuelsPlayed,
-                        AverageDuelDuration = stat.AverageDuelDuration,
-                        LastDuelPlayedAt = stat.LastDuelPlayedAt
-                    })
-                    .ToList();
+            // Retrieve all player statistics from the repository
+            var playerStatistics = await _playerStatisticRepository.ReadAllAsync();
 
-                return Ok(playerStatisticsDtos);
-            }
-            catch (Exception ex)
-            {
-                // Log the exception or handle it appropriately
-                return BadRequest(new { Message = "Failed to retrieve player statistics", Error = ex.Message });
-            }
+            // Return the list of player statistics
+            return Ok(playerStatistics);
         }
 
+        // Endpoint to update statistics based on the outcome of a duel
         [HttpPost("Statistics")]
-        public async Task<ActionResult> UpdatePlayerStatistics([FromBody] UpdateStatsDto updateStatsDto)
+        public async Task<ActionResult> UpdateStatistics([FromBody] UpdateStatsDto updateStatsDto)
         {
-            try
+            // Retrieve the player statistics for the specified player
+            var playerStatistic = await _playerStatisticRepository.ReadAsync(updateStatsDto.PlayerId);
+
+            if (playerStatistic == null)
             {
-                await _playerStatisticRepository.UpdatePlayerStatisticsAsync(updateStatsDto);
-                return Ok(new { Message = "Player statistics updated successfully" });
+                return NotFound();
             }
-            catch (Exception ex)
-            {
-                // Log the exception or handle it appropriately
-                return BadRequest(new { Message = "Failed to update player statistics", Error = ex.Message });
-            }
+
+            // Update player statistics based on the outcome of the duel
+            playerStatistic.NumberOfDuelsWon = updateStatsDto.NumberOfDuelsWon;
+            playerStatistic.NumberOfDuelsLost = updateStatsDto.NumberOfDuelsLost;
+            playerStatistic.NumberOfDuelsDraw = updateStatsDto.NumberOfDuelsDraw;
+            playerStatistic.NumberOfDuelsPlayed = updateStatsDto.NumberOfDuelsPlayed;
+            playerStatistic.AverageDuelDuration = updateStatsDto.AverageDuelDuration;
+            playerStatistic.LastDuelPlayedAt = updateStatsDto.LastDuelPlayedAt;
+
+            // Save the updated player statistics
+            await _playerStatisticRepository.UpdateAsync(playerStatistic);
+
+            // Return a success response
+            return Ok();
         }
     }
 }

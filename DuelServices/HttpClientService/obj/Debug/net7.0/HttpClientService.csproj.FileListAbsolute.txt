@@ -1,0 +1,12 @@
+C:\Users\lh022\repos\EloSimulationSystem\DuelServices\HttpClientService\bin\Debug\net7.0\HttpClientService.deps.json
+C:\Users\lh022\repos\EloSimulationSystem\DuelServices\HttpClientService\bin\Debug\net7.0\HttpClientService.dll
+C:\Users\lh022\repos\EloSimulationSystem\DuelServices\HttpClientService\bin\Debug\net7.0\HttpClientService.pdb
+C:\Users\lh022\repos\EloSimulationSystem\DuelServices\HttpClientService\obj\Debug\net7.0\HttpClientService.csproj.AssemblyReference.cache
+C:\Users\lh022\repos\EloSimulationSystem\DuelServices\HttpClientService\obj\Debug\net7.0\HttpClientService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lh022\repos\EloSimulationSystem\DuelServices\HttpClientService\obj\Debug\net7.0\HttpClientService.AssemblyInfoInputs.cache
+C:\Users\lh022\repos\EloSimulationSystem\DuelServices\HttpClientService\obj\Debug\net7.0\HttpClientService.AssemblyInfo.cs
+C:\Users\lh022\repos\EloSimulationSystem\DuelServices\HttpClientService\obj\Debug\net7.0\HttpClientService.csproj.CoreCompileInputs.cache
+C:\Users\lh022\repos\EloSimulationSystem\DuelServices\HttpClientService\obj\Debug\net7.0\HttpClientService.dll
+C:\Users\lh022\repos\EloSimulationSystem\DuelServices\HttpClientService\obj\Debug\net7.0\refint\HttpClientService.dll
+C:\Users\lh022\repos\EloSimulationSystem\DuelServices\HttpClientService\obj\Debug\net7.0\HttpClientService.pdb
+C:\Users\lh022\repos\EloSimulationSystem\DuelServices\HttpClientService\obj\Debug\net7.0\ref\HttpClientService.dll

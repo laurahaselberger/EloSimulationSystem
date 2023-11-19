@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Runtime.Serialization;
 
 namespace RegistrationService.Entities;
 
@@ -15,6 +16,6 @@ public class Player
     public string Name { get; set; }
     
     [Required]
-    [Column("EloReating")]
+    [Column("EloRating")]
     public decimal EloRating { get; set; }
 }

@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using PlayerStatisticsService.Entities;
+using RegistrationService.Entities;
 
 
 namespace PlayerStatisticsService.Configurations
@@ -15,16 +16,12 @@ namespace PlayerStatisticsService.Configurations
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Player>()
-                .HasIndex(p => p.Name)
-                .IsUnique();
-
             modelBuilder.Entity<PlayerStatistic>()
                 .HasKey(ps => ps.PlayerId);
 
             modelBuilder.Entity<PlayerStatistic>()
                 .HasOne(ps => ps.Player)
-                .WithOne(p => p.PlayerStatistic)
+                .WithOne()
                 .HasForeignKey<PlayerStatistic>(ps => ps.PlayerId);
         }
     }

@@ -1,0 +1,35 @@
+﻿@page "/playerstatistics"
+@inherits PlayerStatisticsBase
+@using PlayerStatisticsService.Entities
+
+<h3>Player Statistics</h3>
+
+@foreach (var playerStat in PlayerStatistics)
+{
+    <div class="player-stat">
+        <h4>@playerStat.Player.Name</h4>
+        <p>Last Duel played at: @playerStat.LastDuelPlayedAt</p>
+        <p>Current Elo Rating: @playerStat.Player.EloRating</p>
+        <p>W/L Ratio: @(CalculateWinLossRatio(playerStat))</p>
+        <p>Wins: @playerStat.NumberOfDuelsWon</p>
+        <p>Losses: @playerStat.NumberOfDuelsLost</p>
+        <p>Draws: @playerStat.NumberOfDuelsDraw</p>
+        <p>Average Duel Duration: @playerStat.AverageDuelDuration</p>
+    </div>
+}
+
+@code {
+    decimal CalculateWinLossRatio(PlayerStatistic playerStat)
+    {
+        if (playerStat.NumberOfDuelsLost == 0)
+        {
+            return playerStat.NumberOfDuelsWon;
+        }
+        else
+        {
+            return (decimal)playerStat.NumberOfDuelsWon / playerStat.NumberOfDuelsLost;
+        }
+    }
+}
+
+

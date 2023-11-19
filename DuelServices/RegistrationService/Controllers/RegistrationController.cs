@@ -1,60 +1,58 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using RegistrationService.Dtos;
 using RegistrationService.Entities;
 using RegistrationService.Repositories.Implementations;
-using RegistrationService.Repositories.Interfaces;
 
-namespace RegistrationService.Controllers;
-
-[Route("api/[controller]")]
-[ApiController]
-public class RegistrationController : ControllerBase
+namespace RegistrationService.Controllers
 {
-    private readonly ManagePlayerRepository _playerRepository;
-
-    public RegistrationController(ManagePlayerRepository playerRepository)
+    [Route("[controller]")]
+    [ApiController]
+    public class RegistrationController : ControllerBase
     {
-        _playerRepository = playerRepository;
-    }
+        private readonly ManagePlayerRepository _playerRepository;
 
-    [HttpPost("Registration/{name}")]
-    public ActionResult<Player> RegisterPlayer(string name)
-    {
-        var player = _playerRepository.RegisterPlayer(name);
-        return CreatedAtAction(nameof(GetPlayer), new { id = player.Id }, player);
-    }
-
-    [HttpPut("Registration/{id}")]
-    public ActionResult<Player> UpdatePlayer(int id, [FromBody] Player updatedPlayer)
-    {
-        var player = _playerRepository.UpdatePlayer(id, updatedPlayer.Name, updatedPlayer.EloRating);
-
-        if (player == null)
+        public RegistrationController(ManagePlayerRepository playerRepository)
         {
-            return NotFound(); // Spieler nicht gefunden
+            _playerRepository = playerRepository?? throw new ArgumentNullException(nameof(playerRepository));
         }
 
-        return player;
-    }
-
-    [HttpGet("Players")]
-    public ActionResult<List<Player>> GetAllPlayers()
-    {
-        var players = _playerRepository.GetAllPlayers();
-        return players;
-    }
-
-    [HttpGet("Players/{id}")]
-    public ActionResult<Player> GetPlayer(int id)
-    {
-        var player = _playerRepository.GetPlayer(id);
-
-        if (player != null)
+        // Endpoint to create a new player
+        [HttpPost("Registration")]
+        public ActionResult<Player> RegisterPlayer([FromBody] PlayerDto playerDto)
         {
+            // Register a new player with the provided name
+            var player = _playerRepository.RegisterPlayer(playerDto.Name);
+
+            // Return a 201 Created response with the newly created player
+            return CreatedAtAction(nameof(RegisterPlayer), new { id = player.Id }, player);
+        }
+
+        // Endpoint to update an existing player
+        [HttpPut("Registration/{id}")]
+        public ActionResult<Player> UpdatePlayer(int id, [FromBody] UpdatePlayerDto updatePlayerDto)
+        {
+            // Update an existing player with the provided ID, name, and Elo rating
+            var player = _playerRepository.UpdatePlayer(id, updatePlayerDto.Name, updatePlayerDto.EloRating);
+            
+            if (player == null)
+            {
+                return NotFound(); // Player not found
+            }
+
             return player;
         }
-        else
+
+        // Endpoint to retrieve a list of all registered players
+        [HttpGet("Players")]
+        public ActionResult<List<PlayerListDto>> GetAllPlayers()
         {
-            return NotFound();
+            // Get all registered players from the repository
+            var players = _playerRepository.GetAllPlayers();
+
+            // Map players to PlayerListDto for response
+            var playersDto = players.Select(p => new PlayerListDto { Id = p.Id, Name = p.Name, EloRating = p.EloRating }).ToList();
+
+            return playersDto;
         }
     }
 }
