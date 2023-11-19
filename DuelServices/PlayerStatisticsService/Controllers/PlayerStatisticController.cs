@@ -1,10 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using PlayerStatisticsService.Entities;
 using PlayerStatisticsService.Repositories.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using PlayerStatisticsService;
+using PlayerStatisticsService.Dtos;
 
 namespace PlayerStatisticService.Controllers
 {

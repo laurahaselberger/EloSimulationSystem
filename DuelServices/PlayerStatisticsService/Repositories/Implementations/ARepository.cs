@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using PlayerStatisticsService.Configurations;
 using PlayerStatisticsService.Repositories.Interfaces;
 
+
 namespace PlayerStatisticsService.Repositories.Implementations; 
 
 public abstract class ARepository<TEntity> : IRepository<TEntity> where TEntity : class {

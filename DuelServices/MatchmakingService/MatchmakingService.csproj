@@ -22,8 +22,27 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Dtos" />
-      <Folder Include="Entities" />
+      <Compile Remove="Entities\**" />
+      <Compile Remove="Dtos\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="Entities\**" />
+      <EmbeddedResource Remove="Dtos\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Entities\**" />
+      <None Remove="Dtos\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Remove="Entities\**" />
+      <Content Remove="Dtos\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\RegistrationService\RegistrationService.csproj" />
     </ItemGroup>
 
 </Project>

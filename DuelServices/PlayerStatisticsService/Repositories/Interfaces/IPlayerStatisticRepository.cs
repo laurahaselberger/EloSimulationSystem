@@ -1,4 +1,5 @@
-﻿using PlayerStatisticsService.Entities;
+﻿
+using PlayerStatisticsService.Entities;
 
 namespace PlayerStatisticsService.Repositories.Interfaces; 
 

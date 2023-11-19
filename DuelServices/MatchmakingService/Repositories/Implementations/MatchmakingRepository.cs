@@ -1,4 +1,12 @@
-﻿namespace PlayerStatisticsService.Repositories.Implementations; 
+﻿using RegistrationService.Configurations;
+using RegistrationService.Entities;
+using RegistrationService.Repositories.Implementations;
 
-public class MatchmakingRepository {
+namespace MatchmakingService.Repositories.Implementations;
+
+public abstract class MatchmakingRepository : ARepository<Player>
+{
+    protected MatchmakingRepository(MatchmakingDbContext context) : base(context)
+    {
+    }
 }

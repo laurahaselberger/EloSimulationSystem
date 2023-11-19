@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace PlayerStatisticsService.Entities; 
+namespace PlayerStatisticsService.Dtos; 
 
 public record CreatePlayerDto([StringLength(255)] string Name);
     

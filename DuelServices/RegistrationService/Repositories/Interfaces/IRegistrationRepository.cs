@@ -1,5 +1,9 @@
-﻿namespace PlayerStatisticsService.Repositories.Interfaces; 
+﻿using System.Linq.Expressions;
+using RegistrationService.Entities;
 
-public interface IPlayerStatisticRepository {
+namespace RegistrationService.Repositories.Interfaces;
+
+public interface IRegistrationRepository : IRepository<Player>
+{
     
 }

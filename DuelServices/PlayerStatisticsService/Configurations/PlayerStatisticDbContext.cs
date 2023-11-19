@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using PlayerStatisticsService.Entities;
 
+
 namespace PlayerStatisticsService.Configurations
 {
     public class PlayerStatisticDbContext : DbContext

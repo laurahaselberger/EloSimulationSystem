@@ -1,4 +1,4 @@
-﻿namespace PlayerStatisticsService.Entities; 
+﻿namespace PlayerStatisticsService.Dtos; 
 
 public record UpdateStatsDto(int PlayerId, int NumberOfDuelsWon, int NumberOfDuelsLost, int NumberOfDuelsDraw, int NumberOfDuelsPlayed, int? AverageDuelDuration, DateTime? LastDuelPlayedAt);
 

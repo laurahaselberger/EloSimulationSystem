@@ -4,6 +4,7 @@ using PlayerStatisticsService.Configurations;
 using PlayerStatisticsService.Entities;
 using PlayerStatisticsService.Repositories.Interfaces;
 
+
 namespace PlayerStatisticsService.Repositories.Implementations; 
 
 public class PlayerStatisticRepository : ARepository<PlayerStatistic>, IPlayerStatisticRepository
