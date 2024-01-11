@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "mkEPQI01hHn+Whprli8xPmCrGPu+c6f1O/Gxl8hQf7ugLay8RnEbhebtJpOu89ONJpOsOn+c4xm530+5iqHaxw==",
+  "dgSpecHash": "X9cJN5CcX8dk3KJy7t+3jOs/+c42Li5aB0ngFa5TdMlB5wsZ8nA3ZPWKJ/Ccu9m4r3HtP5/UYmCnzUPowCAvLw==",
   "success": true,
   "projectFilePath": "C:\\Users\\lh022\\repos\\EloSimulationSystem\\DuelServices\\DuelService\\DuelService.csproj",
   "expectedPackageFiles": [
@@ -85,7 +85,11 @@
     "C:\\Users\\lh022\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
     "C:\\Users\\lh022\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512",
     "C:\\Users\\lh022\\.nuget\\packages\\system.threading\\4.3.0\\system.threading.4.3.0.nupkg.sha512",
-    "C:\\Users\\lh022\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512"
+    "C:\\Users\\lh022\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
+    "C:\\Users\\lh022\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.14\\microsoft.netcore.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\lh022\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.14\\microsoft.windowsdesktop.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\lh022\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.14\\microsoft.aspnetcore.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\lh022\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.14\\microsoft.netcore.app.host.win-x64.7.0.14.nupkg.sha512"
   ],
   "logs": []
 }
