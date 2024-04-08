@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "v4VUxxJUU6S9FaqrbtKbN6TXpNC9dOKb0B3P+dm3aIz57zYH7+FLt/74WeW7yMOsjiEN5C7adTCylOne5HUvOQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\lh022\\repos\\EloSimulationSystem\\Projektverwaltung\\Projectmanagement\\approval_queue\\approval_queue.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lh022\\.nuget\\packages\\rabbitmq.client\\6.8.1\\rabbitmq.client.6.8.1.nupkg.sha512",
+    "C:\\Users\\lh022\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
+    "C:\\Users\\lh022\\.nuget\\packages\\system.threading.channels\\7.0.0\\system.threading.channels.7.0.0.nupkg.sha512",
+    "C:\\Users\\lh022\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.27\\microsoft.windowsdesktop.app.ref.6.0.27.nupkg.sha512",
+    "C:\\Users\\lh022\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.27\\microsoft.netcore.app.ref.6.0.27.nupkg.sha512",
+    "C:\\Users\\lh022\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.27\\microsoft.aspnetcore.app.ref.6.0.27.nupkg.sha512",
+    "C:\\Users\\lh022\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.27\\microsoft.netcore.app.host.win-x64.6.0.27.nupkg.sha512"
+  ],
+  "logs": []
+}

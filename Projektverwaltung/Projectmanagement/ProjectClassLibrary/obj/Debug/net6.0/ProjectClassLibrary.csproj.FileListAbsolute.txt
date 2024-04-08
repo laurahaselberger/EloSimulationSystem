@@ -1,0 +1,13 @@
+C:\Users\lh022\repos\EloSimulationSystem\Projektverwaltung\Projectmanagement\ProjectClassLibrary\bin\Debug\net6.0\ProjectClassLibrary.deps.json
+C:\Users\lh022\repos\EloSimulationSystem\Projektverwaltung\Projectmanagement\ProjectClassLibrary\bin\Debug\net6.0\ProjectClassLibrary.dll
+C:\Users\lh022\repos\EloSimulationSystem\Projektverwaltung\Projectmanagement\ProjectClassLibrary\bin\Debug\net6.0\ProjectClassLibrary.pdb
+C:\Users\lh022\repos\EloSimulationSystem\Projektverwaltung\Projectmanagement\ProjectClassLibrary\obj\Debug\net6.0\ProjectClassLibrary.csproj.AssemblyReference.cache
+C:\Users\lh022\repos\EloSimulationSystem\Projektverwaltung\Projectmanagement\ProjectClassLibrary\obj\Debug\net6.0\ProjectClassLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lh022\repos\EloSimulationSystem\Projektverwaltung\Projectmanagement\ProjectClassLibrary\obj\Debug\net6.0\ProjectClassLibrary.AssemblyInfoInputs.cache
+C:\Users\lh022\repos\EloSimulationSystem\Projektverwaltung\Projectmanagement\ProjectClassLibrary\obj\Debug\net6.0\ProjectClassLibrary.AssemblyInfo.cs
+C:\Users\lh022\repos\EloSimulationSystem\Projektverwaltung\Projectmanagement\ProjectClassLibrary\obj\Debug\net6.0\ProjectClassLibrary.csproj.CoreCompileInputs.cache
+C:\Users\lh022\repos\EloSimulationSystem\Projektverwaltung\Projectmanagement\ProjectClassLibrary\obj\Debug\net6.0\ProjectClassLibrary.sourcelink.json
+C:\Users\lh022\repos\EloSimulationSystem\Projektverwaltung\Projectmanagement\ProjectClassLibrary\obj\Debug\net6.0\ProjectClassLibrary.dll
+C:\Users\lh022\repos\EloSimulationSystem\Projektverwaltung\Projectmanagement\ProjectClassLibrary\obj\Debug\net6.0\refint\ProjectClassLibrary.dll
+C:\Users\lh022\repos\EloSimulationSystem\Projektverwaltung\Projectmanagement\ProjectClassLibrary\obj\Debug\net6.0\ProjectClassLibrary.pdb
+C:\Users\lh022\repos\EloSimulationSystem\Projektverwaltung\Projectmanagement\ProjectClassLibrary\obj\Debug\net6.0\ref\ProjectClassLibrary.dll
